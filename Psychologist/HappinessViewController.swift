@@ -10,6 +10,7 @@ import UIKit
 
 class HappinessViewController: UIViewController, FaceViewDataSource
 {
+    
     @IBOutlet weak var faceView: FaceView! {
         didSet {
             faceView.DataSource = self
@@ -48,7 +49,8 @@ class HappinessViewController: UIViewController, FaceViewDataSource
     
     func updateUI()
     {
-        faceView.setNeedsDisplay()
+        faceView?.setNeedsDisplay()
+        title = "\(happiness)"
     }
     
     func smillnessForFaceView(sender: FaceView) -> Double? {

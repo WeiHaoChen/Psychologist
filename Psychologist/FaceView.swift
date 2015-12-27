@@ -8,7 +8,8 @@
 
 import UIKit
 
-protocol FaceViewDataSource: class {
+protocol FaceViewDataSource: class
+{
     func smillnessForFaceView(sender: FaceView) -> Double?
 }
 
